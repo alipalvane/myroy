@@ -6,7 +6,6 @@ import { OrganizationSwitcher } from "@clerk/nextjs";
 import { LayoutDashboard, Star } from "lucide-react";
 import { useSearchParams } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import Logo from "@/public/logo.svg";
 
 export const OrgSidebar = () => {
   const searchParams = useSearchParams();
@@ -16,7 +15,7 @@ export const OrgSidebar = () => {
     <div className="hidden lg:flex flex-col space-y-6 w-[206px] pl-5 pt-5">
       <Link href="/">
         <div className="flex items-center gap-x-3">
-          <Image src={Logo} alt="logo" height={60} width={60} />
+          <Image src="/logo.svg" alt="logo" height={60} width={60} />
           <span className="font-semibold text-2xl">Myroy</span>
         </div>
       </Link>
